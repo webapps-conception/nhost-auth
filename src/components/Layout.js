@@ -10,9 +10,12 @@ import {
   UserIcon,
 } from '@heroicons/react/outline';
 import Avatar from './Avatar';
+import { useSignOut } from '@nhost/react'
+import { useUserData } from '@nhost/react'
 
 const Layout = () => {
-  const user = null;
+  const user = useUserData();
+  const { signOut } = useSignOut();
 
   const menuItems = [
     {
@@ -27,8 +30,8 @@ const Layout = () => {
     },
     {
       label: 'Logout',
-      onClick: () => null,
-      icon: LogoutIcon,
+      onClick: signOut,
+      icon: LogoutIcon
     },
   ];
 

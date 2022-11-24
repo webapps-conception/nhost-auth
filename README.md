@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# nhost-auth
+
+Getting Started with Create React App
+
+[Quickstart: React](https://docs.nhost.io/quickstarts/react)
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
